@@ -58,13 +58,94 @@
 
     <!-- Bounding box with sea surface -->
     <include>
+      <name>water</name>
       <uri>model://pool_water</uri>
       <pose>0 0 0 0 0 0</pose>
     </include>
 
     <include>
+      <name>pool</name>
       <uri>model://sauvc2022_pool</uri>
       <pose>0 0 0.07 1.57 0 0</pose>
+    </include>
+
+    <include>
+      <name>drumRed1</name>
+      <uri>model://sauvc2022_drumred</uri>
+      <pose>-8 4 -1.9 1.57 0 0</pose>
+    </include>
+
+    <include>
+      <name>drumBlue</name>
+      <uri>model://sauvc2022_drumblue</uri>
+      <pose>-8 6 -1.9 1.57 0 0</pose>
+    </include>
+
+    <include>
+      <name>drumRed2</name>
+      <uri>model://sauvc2022_drumred</uri>
+      <pose>-8 8 -1.9 1.57 0 0</pose>
+    </include>
+
+    <include>
+      <name>drumRed3</name>
+      <uri>model://sauvc2022_drumred</uri>
+      <pose>-8 10 -1.93 1.57 0 0</pose>
+    </include>
+
+    <include>
+      <name>qualGate1</name>
+      <uri>model://sauvc2022_qualification</uri>
+      <pose>8 -15 0.07 1.57 0 0</pose>
+    </include>
+
+    <include>
+      <name>qualGate2</name>
+      <uri>model://sauvc2022_qualification</uri>
+      <pose>-8 -15 0.07 1.57 0 0</pose>
+    </include>
+    
+    <include>
+      <name>rFlare</name>
+      <uri>model://sauvc2022_redflare</uri>
+      <!-- 
+        4.5 <= x <= 8.5
+        -3 <= y <= 25 
+      -->
+      <pose>5.5 22 -1.9 1.57 0 0</pose>
+    </include>
+
+    <include>
+      <name>yFlare1</name>
+      <uri>model://sauvc2022_yellowflare</uri>
+      <!-- 
+        -12.5 <= x <= 12.5
+        -3 <= y <= 25 
+      -->
+      <pose>-8 -1 -1.9 1.57 0 0</pose>
+    </include>
+
+    <include>
+      <name>yFlare2</name>
+      <uri>model://sauvc2022_yellowflare</uri>
+      <!-- 
+        -12.5 <= x <= 12.5
+        -3 <= y <= 25 
+      -->
+      <pose>1.5 19 -1.9 1.57 0 0</pose>
+    </include>
+
+    <include>
+      <name>gate</name>
+      <uri>model://sauvc2022_gate</uri>
+      <!-- -2.25 <= y <= 24.25 -->
+      <pose>0.5 13 -1.9 1.57 0 1.57</pose>
+    </include>
+
+    <include>
+      <name>startGate</name>
+      <uri>model://sauvc2022_starting</uri>
+      <pose>12.5 11 0.02 -1.57 0 -1.57</pose>
     </include>
 
     <plugin name="underwater_current_plugin" filename="libuuv_underwater_current_ros_plugin.so">
